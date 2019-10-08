@@ -15,7 +15,6 @@ char *pss = NULL;
 char *mst = "siesta";
 
 int isReg = 0;
-int isAut = 0;
 
 int ticks = 0;
 
