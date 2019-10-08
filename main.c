@@ -110,9 +110,9 @@ static void onLine(dyad_Event * e)
 	skip(cmd, '\r');
 	par = skip(cmd, ' ');
 	txt = skip(par, ':');
-	par = trim(par);
+	trim(par);
 
-	txt = trim(txt);
+	trim(txt);
 
 /*
 	printf("usr: %s\n",usr);
