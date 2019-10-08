@@ -13,7 +13,6 @@ char *chn = "#gametime";
 char *nck = "siesto";
 char *pss = NULL;
 char *mst = "siesta";
-char *mstpss = "paanoanggagawinko";
 
 int isReg = 0;
 int isAut = 0;
@@ -126,7 +125,7 @@ static void onLine(dyad_Event * e)
 	if (!strcmp(cmd, "PING")) {
 		dyad_writef(e->stream, "PONG %s\r\n", txt);
 	} else if (!strcmp(cmd, "001")) {
-		printf("connected\n");
+		printf("connected.\n");
 		dyad_writef(e->stream, "JOIN %s\r\n", chn);
 		isReg = 1;
 	} else if (!strcmp(cmd, "PRIVMSG")) {
@@ -176,7 +175,7 @@ int main(int argc, char **argv)
 	dyad_addListener(s, DYAD_EVENT_LINE, onLine, NULL);
 	dyad_addListener(s, DYAD_EVENT_TICK, onTick, NULL);
 
-	printf("connecting\n");
+	printf("connecting...\n");
 
 	dyad_connect(s, srv, prt);
 
