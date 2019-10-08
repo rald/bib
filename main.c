@@ -162,6 +162,7 @@ int main(int argc,char **argv) {
   dyad_addListener(s,DYAD_EVENT_TICK,onTick,NULL);
 
 	printf("connecting\n");
+
   dyad_connect(s,srv,prt);
 
   while(dyad_getStreamCount()>0) {
