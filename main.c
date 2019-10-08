@@ -13,7 +13,6 @@ char *chn = "#gametime";
 char *nck = "siesto";
 char *pss = NULL;
 char *mst = "siesta";
-char *mstpss = "paanoanggagawinko";
 
 int isReg = 0;
 int isAut = 0;
